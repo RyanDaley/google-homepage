@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End of Eric Meyer's initialization */
+
+/* ------------------------------------------------------------------------------ */
+
+
+/* Begininning of my code */
+
+body{
+    margin: 0;
+    background: #fff;
+    height: 100%;
+}
+
+header{
+    top: 16px;
+    text-align: center;
+    background-position: center;
+    display: block;
+    direction:ltr;
+    height: 200px;
+    color: #222;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    opacity: 0.75;
+}
+.signin{
+    background-color: blue;
+    border-radius: 10%;
+    height: 25px;
+    padding-left: 15px;
+    position: relative;
+    top: -5px;
+    line-height: 23px;
+}
+
+.signin a{
+    color:white;
+    margin-right: 0px;
+}
+
+.left{
+    /* Float, takes an item out of the normal flow,
+    floated items allow text to flow around it
+     */
+    float: left;
+    margin: 10px 0 0 0; 
+    padding-left: 15px;
+}
+.right{
+    float: right;
+    margin: 10px 0 0 0;
+    padding-right: 15px;
+
+}
+
+
+.mid{
+    /* this creates a flex-box layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+form {
+    /*center the form  */
+    margin: 0 auto;
+    width: 500px;
+    /* form outline */
+    padding: 1em;
+}
+
+input{
+    font: 1em sans-serif;
+
+    width: 500px;
+    height: 30px;
+    border: 1px solid #949494;
+    border-radius: 5em;
+    text-justify: center;
+    text-align: center;
+    color: gray;
+
+}
+
+img{
+    margin: auto;
+
+}
+ul{
+    margin: 0px;
+    padding 0px;
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+}
+
+.lower{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.child{
+    background-color: rgb(197, 194, 194);
+    border:solid 1px black;
+    border-radius: 2%;
+    width: 200px;
+    flex-basis:auto;
+    justify-content:flex-start;
+    align-content:center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer ul li{
+    color: #808080;
+}
+
+
+footer{
+    bottom: 0;
+    height: 35px;
+    position:fixed;
+    width: 100%;
+    font-size: 13pt;
+    color: #222;
+    display: block;
+    min-width: 35px;
+    background-color: rgb(242, 242, 242);
+    border-top-style: solid;
+    border-top-color: rgb(228, 228, 228);
+    border-top-width: 1px;
+}
+
+footer .footer_left{
+    float: left;
+    line-height: 40px;
+    margin-left: 30px;
+}
+
+footer .footer_right{
+    float: right;
+    line-height: 40px;
+    margin-right: 30px;
+}
+
+.myclass{
+    display: block;
+
+}
+
+
+/* media quieries */
+/* make sure media quieries are defined in order of size from
+largest to smallest. */
+/* or for mobile up approach, you start with min width */
+@media screen and (max-width: 715px){
+
+}
+
+@media screen and (max-width: 400px){
+
+}
